@@ -17,7 +17,7 @@ class StandardResultsSetPagination(PageNumberPagination):
     max_page_size = 10
 
 
-# Retrieve testimonials
+# Retrieve testimonials 
 class TestimonialView(viewsets.ModelViewSet):
     pagination_class = StandardResultsSetPagination
     queryset = TestimonialModel.objects.all()
