@@ -13,12 +13,10 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-
+    
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ftp.itsmekiran.com
         username: apple@itsmekiran.com
         password: cskWeHB7V8$yAq8GFUFQJQDx!NTrM3wme3#bX7!8sBCp5qYGcbHqzGAZC%e
-        protocol: ftps
-        port: 21 # todo replace with your web hosts ftps port
