@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AppleSchoolWebsiteConfig(AppConfig):
-    name = 'apple_school_website'
+    name = 'apps.apple_school_website'

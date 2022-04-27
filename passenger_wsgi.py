@@ -1,0 +1,1 @@
+from apple_school_project.wsgi import application
