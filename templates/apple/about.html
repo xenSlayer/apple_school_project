@@ -1,0 +1,64 @@
+{% extends 'apple/base.html' %} {% load static %}
+<!DOCTYPE html>
+<html>
+
+{% block title %}
+<title> Apple International School | About us </title> {% endblock title %} {% block navbarcontent %}
+<div class="text-box">
+    <h1 style="border: 2px solid white;border-radius: 100px;">About Us</h1>
+</div>
+</section>
+{% endblock navbarcontent %}
+
+<!-------about us content--------->
+{% block body %}
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Who we are</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a culpa cupiditate eaque delectus odio quibusdam dolor mollitia excepturi aliquam, ducimus nisi minus at, incidunt esse ea corrupti veniam obcaecati! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Deserunt repellendus, cumque tempore maxime dolores aperiam nisi natus animi nemo in sit eius exercitationem quidem atque maiores repellat modi voluptatum minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dicta recusandae fuga tempora nisi at minus incidunt suscipit nesciunt aliquam porro odio odit pariatur quas rem sunt, quia dolore sapiente numquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque beatae, reprehenderit
+                nisi recusandae minus hic veniam optio temporibus saepe tempore, error labore atque voluptas iusto esse, a quibusdam ducimus autem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, obcaecati placeat fugit quia ut incidunt,
+                praesentium ipsum voluptas inventore nisi voluptatibus neque quaerat culpa, deleniti quo sed? Saepe, sed fuga?
+            </p>
+        </div>
+        <div class="about-col">
+            <img src="{% static 'img/6.png' %}">
+        </div>
+    </div>
+</section>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Vision, Mission & Objectives</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a culpa cupiditate eaque delectus odio quibusdam dolor mollitia excepturi aliquam, ducimus nisi minus at, incidunt esse ea corrupti veniam obcaecati! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Deserunt repellendus, cumque tempore maxime dolores aperiam nisi natus animi nemo in sit eius exercitationem quidem atque maiores repellat modi voluptatum minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dicta recusandae fuga tempora nisi at minus incidunt suscipit nesciunt aliquam porro odio odit pariatur quas rem sunt, quia dolore sapiente numquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque beatae, reprehenderit
+                nisi recusandae minus hic veniam optio temporibus saepe tempore, error labore atque voluptas iusto esse, a quibusdam ducimus autem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, obcaecati placeat fugit quia ut incidunt,
+                praesentium ipsum voluptas inventore nisi voluptatibus neque quaerat culpa, deleniti quo sed? Saepe, sed fuga?
+            </p>
+        </div>
+        <div class="about-col">
+            <img src="{% static 'img/2.jpg' %}">
+        </div>
+    </div>
+</section>
+
+<!---JS for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+
+</html>
+
+{% endblock body %}

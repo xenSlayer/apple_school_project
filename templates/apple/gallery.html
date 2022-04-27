@@ -1,0 +1,32 @@
+{% extends 'apple/base.html' %} {% load static %}
+<!DOCTYPE html>
+<html>
+
+{% block title %}
+<title> Apple International School | Gallery </title> {% endblock title %} {% block navbarcontent %}
+<div class="text-box">
+    <h1 style="border: 2px solid white;border-radius: 100px;">Gallery</h1>
+</div>
+</section>
+{% endblock navbarcontent %}
+
+<!----- gallery ---------->
+{% block body %}
+
+<!---JS for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+
+</html>
+
+{% endblock body %}

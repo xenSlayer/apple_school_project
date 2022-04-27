@@ -1,0 +1,68 @@
+{% extends 'apple/base.html' %} {% load static %}
+<!DOCTYPE html>
+<html>
+{% block title %}
+<title> Apple International School | Facilities </title> {% endblock title %} {% block navbarcontent %}
+<div class="text-box">
+    <h1 style="border: 2px solid white;border-radius: 100px;">Our Facilities</h1>
+</div>
+{% endblock navbarcontent %}
+
+<body>
+    {% block body %}
+    <!----Facilities----->
+    <section class="facilities">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil eos rerum, molestiae enim aliquid maiores,
+            <br> voluptate amet veniam ex, culpa rem aperiam ab corrupti laborum velit ipsum fugiat! Impedit, sunt!
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="{% static  'img/classroom.png' %}">
+                <h3>Classrooms</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione hic a iste facilis, blanditiis quo aliquid sint animi architecto voluptas velit excepturi ut at esse, id maiores asperiores debitis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static  'img/library.png' %}">
+                <h3>Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione hic a iste facilis, blanditiis quo aliquid sint animi architecto voluptas velit excepturi ut at esse, id maiores asperiores debitis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static  'img/9.png' %}">
+                <h3>Canteen</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione hic a iste facilis, blanditiis quo aliquid sint animi architecto voluptas velit excepturi ut at esse, id maiores asperiores debitis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static  'img/10.png' %}">
+                <h3>Health Care</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione hic a iste facilis, blanditiis quo aliquid sint animi architecto voluptas velit excepturi ut at esse, id maiores asperiores debitis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static  'img/12.png' %}">
+                <h3>Sports and other extracurricular activities</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione hic a iste facilis, blanditiis quo aliquid sint animi architecto voluptas velit excepturi ut at esse, id maiores asperiores debitis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static  'img/11.png' %}">
+                <h3>Computer Lab</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione hic a iste facilis, blanditiis quo aliquid sint animi architecto voluptas velit excepturi ut at esse, id maiores asperiores debitis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!---JS for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
+
+{% endblock body %}

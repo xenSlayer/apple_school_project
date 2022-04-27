@@ -1,0 +1,78 @@
+{% extends 'apple/base.html' %} {% load static %}
+<!DOCTYPE html>
+<html>
+
+{% block title %}
+<title> Apple International School | Gallery </title> {% endblock title %} {% block navbarcontent %}
+<div class="text-box">
+    <h1 style="border: 2px solid white;border-radius: 100px;">Login / Register</h1>
+</div>
+</section>
+{% endblock navbarcontent %}
+
+<!----Login portion starts here-------->
+{% block body %}
+
+<div class="login-page">
+    <div class="container-1">
+        <div class="col-2">
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="Indicator">
+                </div>
+                <form id="LoginForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn-1">Login</button>
+                    <a href="" style="color: limegreen; font-size: 15px;">Forgot Password</a>
+                </form>
+                <form id="RegForm">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn-1">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---JS for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!---JS for toggle form-->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login() {
+        RegForm.style.transform = "translateX(350px)";
+        LoginForm.style.transform = "translateX(350px)";
+        Indicator.style.transform = "translateX(-20px)";
+    }
+</script>
+
+</body>
+
+</html>
+
+{% endblock body %}
