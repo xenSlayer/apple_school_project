@@ -125,9 +125,9 @@ USE_TZ = True
 STATIC_URL = '/static/apple/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static/apple/'),
+    os.path.join(str(BASE_DIR), 'static/apple/'),
 )
 
 # Media Files
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(str(BASE_DIR), 'media')
 MEDIA_URL = '/media/'
