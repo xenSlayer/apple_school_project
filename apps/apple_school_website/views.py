@@ -67,7 +67,10 @@ class EventView(viewsets.ModelViewSet):
 
 # Renders React's index page
 def index(request):
-    return TemplateResponse(request, 'apple/index.html', context={})
+    testimonials = TestimonialModel.objects.all()
+    return TemplateResponse(request, 'apple/index.html', context={
+        "testimonials": testimonials,
+    })
 
 
 def about(request):

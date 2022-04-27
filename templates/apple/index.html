@@ -47,11 +47,14 @@
         </p>
 
         <div class="row">
+            {% for testimonial in testimonials %}
             <div class="testimonial-col">
-                <img src="{% static 'img/messi.png' %}">
+                <img src="media/{{testimonial.image}}">
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem quis magni veritatis quibusdam eligendi recusandae harum. Nihil quasi at optio, inventore possimus explicabo in distinctio cupiditate aut nostrum. Natus?</p>
-                    <h3>Lionel Messi</h3>
+                    <p>{{ testimonial.description }}</p>
+                    <h3>{{ testimonial.name }}</h3>
+                    <p>{{ testimonial.relationToSchool }}</p>
+                    <br>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -59,30 +62,7 @@
                     <i class="fa fa-star"></i>
                 </div>
             </div>
-            <div class="testimonial-col">
-                <img src="{% static 'img/lebron.png' %}">
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem quis magni veritatis quibusdam eligendi recusandae harum. Nihil quasi at optio, inventore possimus explicabo in distinctio cupiditate aut nostrum. Natus?</p>
-                    <h3>Lebron James</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-            </div>
-            <div class="testimonial-col">
-                <img src="{% static 'img/nadal.png' %}">
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem quis magni veritatis quibusdam eligendi recusandae harum. Nihil quasi at optio, inventore possimus explicabo in distinctio cupiditate aut nostrum. Natus?</p>
-                    <h3>Rafael Nadal</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-            </div>
+            {% endfor testimonials %}
         </div>
     </section>
 
@@ -90,7 +70,7 @@
 
     <section class="contactpart">
         <h1>Get The Best Education For Your Brighter Future</h1>
-        <a href="contact.html" class="contactpart-btn">Contact Us</a>
+        <a href="{% url 'contact' %}" class="contactpart-btn">Contact Us</a>
     </section>
 
 </body>
