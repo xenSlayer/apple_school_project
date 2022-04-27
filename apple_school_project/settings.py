@@ -26,7 +26,7 @@ SECRET_KEY = '4n=@9*u$vk5icclq*j!r$cl+r77ct$&+=nrb&g#t6%(e$8&q2u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["itsmekiran.com", "www.itsmekiran.com", "https://www.itsmekiran.com", "*"]
 
 
 # Application definition
