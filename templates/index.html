@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if user.is_authenticated %}
+    <title>HomePage</title>
+    {% else %}
+    <title>Access denied</title>
+    {% endif %}
+
+</head>
+{% if user.is_authenticated %}
+<body>
+        <h1>
+        MESSAGES
+    </h1>
+    {% if messages %}
+    {% for message in messages %}
+    <h2>
+        {{ message }}
+    </h2>
+    <small>
+        Sent by {{ message.email }} on {{ message.date_created}}
+    </small>
+    <br>
+        <small>
+            {{ message.message }}
+        </small>
+    <br>
+    <small>
+        Contact: {{message.contact_number}}
+    </small>
+    {% endfor %}
+    {% else %}
+    <small>No messages</small>
+    {% endif %}
+
+    <h2>
+        BLOG
+    </h2>
+    {% if blogs %}
+    {% for blog in blogs %}
+    <h1>
+        {{ blog.title }}
+    </h1>
+    <small>
+        {{ blog.date_created }}
+    </small>
+    <br>
+    <small>
+        Blog from {{ blog.author_name }}: {{ blog.blog_from }}
+    </small>
+    <br>
+    {{ blog.description | safe }}
+    <br>
+    {% endfor %}
+    {% else %}
+    <small>
+        No blogs posted yed :(
+    </small>
+    {% endif %}
+</body>
+{% else %}
+<small>
+    You don't have permission to view this content
+</small>
+{% endif %}
+</html>

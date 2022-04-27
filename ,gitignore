@@ -1,0 +1,4 @@
+./db.sqlite3
+./requirements_dev.txt
+./env
+__pycache__

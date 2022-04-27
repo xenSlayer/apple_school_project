@@ -1,0 +1,11 @@
+Django
+djangorestframework-simplejwt
+django-cors-headers==3.5.0
+djangorestframework
+markdown
+django-filter
+mysqlclient==2.1.0
+Pillow
+django-enum-choices==2.1.2
+django-summernote==0.8.11.6
+django-import_export
