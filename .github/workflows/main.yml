@@ -1,23 +1,24 @@
-name: Publish to cPanel
-# Controls when the workflow will run
+name: 🚀 Deploy website on push
+
 on:
   push:
-    branches: [ master ]
-
+    branches: [master]
   pull_request:
-    branches: [ master, dev ]
+    branches: [master, dev]
 
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
-      with:
-        fetch-depth: 2
-    - name: FTP-Deploy-Action
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: ftp.samkirkland.com
+        username: myFtpUserName
+        password: ${{ secrets.password }}
+        protocol: ftps
+        port: 1234 # todo replace with your web hosts ftps port
