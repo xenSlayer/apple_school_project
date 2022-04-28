@@ -126,6 +126,7 @@ STATIC_URL = '/static/apple/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static/apple/'),
+    os.path.join('/home3/kiranpau/itsmekiran.com/apple/'),
 )
 
 # Media Files
