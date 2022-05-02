@@ -4,10 +4,15 @@ SECRET_KEY = '4n=@9*u$vk5icclq*j!r$cl+r77ct$&+=nrb&g#t6%(e$8&q2u'
 
 ALLOWED_HOSTS = ["apple.itsmekiran.com", "https://apple.itsmekiran.com/"]
 
+
+# Change this later
+cpanel_user = 'kiranpau'
+domain = 'itsmekiran.com'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [str(BASE_DIR) + '/templates/', ],
+        'DIRS': [f'/home3/{cpanel_user}/{domain}/apple/templates', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -19,10 +24,6 @@ TEMPLATES = [
         },
     },
 ]
-
-# Change this later
-cpanel_user = 'kiranpau'
-domain = 'itsmekiran.com'
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
