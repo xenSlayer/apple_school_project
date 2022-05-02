@@ -7,7 +7,7 @@ services:
     volumes:
       - static_data:/vol/web
     environment:
-      - ALLOWED_HOSTS=127.0.0.1,localhost,192.168.1.79
+      - ALLOWED_HOSTS=127.0.0.1,localhost,192.168.1.79,https://apple-school.herokuapp.com/,apple-school.herokuapp.com
       - SETTINGS=apple_school_project.settings.production
       - DEBUG=0
 
