@@ -1,1 +1,0 @@
-web:uwsgi --socket :8000 --master --enable-threads --module apple_school_project.wsgi
