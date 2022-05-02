@@ -2,8 +2,7 @@ name: push to heroku 🚀
 
 on:
   push:
-    branches:
-      - [dev-docker]
+    branches: [dev-docker]
 
 jobs:
   build:
