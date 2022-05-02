@@ -1,5 +1,7 @@
 from apple_school_project.settings.base import *
 
+ALLOWED_HOSTS = ["itsmekiran.com",
+                 "www.itsmekiran.com", "https://www.itsmekiran.com"]
 
 TEMPLATES = [
     {
@@ -22,5 +24,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home3/kiranpau/itsmekiran.com/apple/static'
 
 # Media Files
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = '/home3/kiranpau/itsmekiran.com/apple/media'
 MEDIA_URL = '/media/'
