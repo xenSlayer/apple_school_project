@@ -3,6 +3,29 @@ A dynamic school management website
 
 </br>
 
+# commands
+```
+commands: 
+
+for development
+-> export DJANGO_SETTINGS_MODULE=Teknipath.settings.development
+
+for production
+-> export DJANGO_SETTINGS_MODULE=Teknipath.settings.production
+
+in wsgi change:
+-> os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Teknipath.settings.production')
+
+server deployment command / local deployment simulation [host running on http://127.0.0.1:8080/]
+-> sudo docker-compose -f docker-compose-deploy.yml up --build
+
+development [host running on http://127.0.0.1:8080/]
+-> sudo docker-compose build && sudo docker-compose up
+
+to activate virtual env in linux [not needed for production]
+-> source ./Teknipath/venv/bin/activate
+```
+
 # Features
 
 1. Blogs
