@@ -2,14 +2,14 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% block title %} {% endblock title %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'apple/css/style.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!---header-->
 <section class="header">
     <nav>
-        <a href="{% url 'index' %}"><img src="{% static 'img/1.jpg' %}"></a>
+        <a href="{% url 'index' %}"><img src="{% static 'apple/img/1.jpg' %}"></a>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
@@ -27,7 +27,7 @@
                 </li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
                 <li><a href="{% url 'downloads' %}">Downloads</a></li>
-                <li><a href="{% url 'login' %}">Login/Register<img src="{% static 'img/user1.png' %}"
+                <li><a href="{% url 'login' %}">Login/Register<img src="{% static 'apple/img/user1.png' %}"
                             style="width: 20px; position: absolute; margin-left: 5px;"></a></li>
             </ul>
         </div>
