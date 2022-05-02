@@ -1,1 +1,1 @@
-web: gunicorn apple_school_project.wsgi
+web:uwsgi --socket :5000 --master --enable-threads --module apple_school_project.wsgi
