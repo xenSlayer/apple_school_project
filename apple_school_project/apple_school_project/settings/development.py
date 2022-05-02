@@ -14,5 +14,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/apple/')
 STATIC_URL = '/static/'
 
 # Media Files
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = 'apple_school_website/media'
+
 MEDIA_URL = '/media/'

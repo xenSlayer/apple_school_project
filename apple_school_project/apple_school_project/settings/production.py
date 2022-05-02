@@ -21,7 +21,9 @@ ALLOWED_HOSTS = []
 ALLOWED_HOSTS += os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 STATIC_URL = '/static/static/'
-MEDIA_URL = '/static/media/'
 
 STATIC_ROOT = '/vol/web/static'
+
 MEDIA_ROOT = '/vol/web/media'
+
+MEDIA_URL = '/media/'
