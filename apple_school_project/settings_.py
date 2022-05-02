@@ -20,10 +20,14 @@ TEMPLATES = [
     },
 ]
 
+# Change this later
+cpanel_user = 'kiranpau'
+domain = 'itsmekiran.com'
+
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home3/kiranpau/itsmekiran.com/apple/static'
+STATIC_ROOT = f'/home3/{cpanel_user}/{domain}/apple/static'
 
 # Media Files
-MEDIA_ROOT = '/home3/kiranpau/itsmekiran.com/apple/media'
+MEDIA_ROOT = f'/home3/{cpanel_user}/{domain}/apple/media'
 MEDIA_URL = '/media/'
