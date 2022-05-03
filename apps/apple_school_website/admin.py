@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import TestimonialModel, NewsAnnouncementsModel, BlogModel, ContactUsModel, EventModel
+from .models import TestimonialModel, NewsAnnouncementsModel, BlogModel, ContactUsModel, EventModel, DownloadsModel
 from django_summernote.admin import SummernoteModelAdmin
 from import_export.admin import ImportExportActionModelAdmin
 
@@ -15,7 +15,7 @@ class BlogAdmin(SummernoteModelAdmin):
 admin.site.register(NewsAnnouncementsModel, NewsAdmin)
 admin.site.register(BlogModel, BlogAdmin)
 admin.site.register(TestimonialModel)
-
+admin.site.register(DownloadsModel)
 
 @admin.register(EventModel)
 class ViewAdmin(ImportExportActionModelAdmin):

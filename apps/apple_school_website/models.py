@@ -46,7 +46,8 @@ class BlogModel(models.Model):
         ("Student", "Student"),
         ("Principal", "Principal"),
     )
-    blog_from = models.CharField(choices=BLOG_FROM, max_length=20, default="Teacher")
+    blog_from = models.CharField(
+        choices=BLOG_FROM, max_length=20, default="Teacher")
     author_name = models.CharField(max_length=50)
     description = models.TextField()
 
@@ -78,6 +79,7 @@ class ContactUsModel(models.Model):
 class EventModel(models.Model):
     event_name = models.CharField(max_length=100)
     event_date = models.DateField()
+    event_description = models.TextField(max_length=500, null=False)
 
     class Meta:
         verbose_name = 'Event'
@@ -86,3 +88,14 @@ class EventModel(models.Model):
     def __str__(self):
         return self.event_name
 
+
+class DownloadsModel(models.Model):
+    attachment = models.FileField(upload_to='downloads')
+    description = models.CharField(max_length=100, null=False)
+
+    class Meta:
+        verbose_name = 'Download'
+        verbose_name_plural = 'Downloads'
+
+    def __str__(self):
+        return self.description

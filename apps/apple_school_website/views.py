@@ -7,7 +7,7 @@ from rest_framework.views import APIView
 
 from apps.apple_school_website.serializers import TestimonialSerializer, NewsAnnouncementsSerializer, MyFileSerializer, \
     BlogSerializer, ContactUsSerializer, EventSerializer
-from .models import TestimonialModel, NewsAnnouncementsModel, BlogModel, ContactUsModel, EventModel
+from .models import DownloadsModel, TestimonialModel, NewsAnnouncementsModel, BlogModel, ContactUsModel, EventModel
 
 
 # Pagination class
@@ -17,7 +17,7 @@ class StandardResultsSetPagination(PageNumberPagination):
     max_page_size = 10
 
 
-# Retrieve testimonials 
+# Retrieve testimonials
 class TestimonialView(viewsets.ModelViewSet):
     pagination_class = StandardResultsSetPagination
     queryset = TestimonialModel.objects.all()
@@ -82,7 +82,10 @@ def facilities(request):
 
 
 def events(request):
-    return TemplateResponse(request, 'apple/events.html', context={})
+    events = EventModel.objects.all()
+    return TemplateResponse(request, 'apple/events.html', context={
+        "events": events
+    })
 
 
 def gallery(request):
@@ -94,7 +97,10 @@ def contact(request):
 
 
 def downloads(request):
-    return TemplateResponse(request, 'apple/downloads.html', context={})
+    downloads = DownloadsModel.objects.all()
+    return TemplateResponse(request, 'apple/downloads.html', context={
+        "downloads": downloads
+    })
 
 
 def login(request):

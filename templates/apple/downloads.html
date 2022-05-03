@@ -18,34 +18,22 @@
 
 <div class="small-container">
     <br><br><br>
-    <h2 style="text-align: center;font-size: 30px; margin: 0 auto 80px; position: relative; line-height: 60px; color: black;">Download</h2>
+
+    <h2
+        style="text-align: center;font-size: 30px; margin: 0 auto 80px; position: relative; line-height: 60px; color: black;">
+        Downloads</h2>
+    {% for download in downloads %}
     <div class="download-row">
-    <div class="download-column">
-        <img src="img/admission.jpg">
-        <h4>Admission Form</h4>
-        <a href="img/admission.jpg" download class="download-btn">Download<i class="fa fa-download" style="margin-left: 15px;"></i></a>
+
+        <div class="download-column">
+            <img
+                src="https://media.istockphoto.com/vectors/download-icon-isolated-vector-vector-id844294300?k=20&m=844294300&s=612x612&w=0&h=Um3AUbTxB9AlQVK_0ykyr4UO3Yy6rcB0HII6HZbf28M=">
+            <h4>{{ download.description }}</h4>
+            <a href="{{download.attachment.url}}" download class="download-btn">Download<i class="fa fa-download"
+                    style="margin-left: 15px;"></i></a>
+        </div>
     </div>
-    <div class="download-column">
-        <img src="img/project-submission-form.png">
-        <h4>Final Project Submission</h4>
-        <a href="img/project-submission-form.png" download class="download-btn">Download<i class="fa fa-download" style="margin-left: 15px;"></i></a>
-    </div>
-    <div class="download-column">
-        <img src="img/exam-routine.jpg">
-        <h4>Exam Routine</h4>
-        <a href="img/exam-routine.jpg" download class="download-btn">Download<i class="fa fa-download" style="margin-left: 15px;"></i></a>
-    </div>
-    <div class="download-column">
-        <img src="img/result.jpg">
-        <h4>Exam Result</h4>
-        <a href="img/see pdf.pdf" download class="download-btn">Download<i class="fa fa-download" style="margin-left: 15px;"></i></a>
-    </div>
-    <div class="download-column">
-        <img src="img/vacancy.jpg">
-        <h4>Teacher's Required</h4>
-        <a href="img/vacancy.jpg" download class="download-btn">Download<i class="fa fa-download" style="margin-left: 15px;"></i></a>
-    </div>
-    </div>
+    {% endfor %}
 </div>
 
 <!---JS for toggle menu-->
