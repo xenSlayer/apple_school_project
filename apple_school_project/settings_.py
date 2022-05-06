@@ -2,7 +2,7 @@ from apple_school_project.settings.base import *
 
 SECRET_KEY = '4n=@9*u$vk5icclq*j!r$cl+r77ct$&+=nrb&g#t6%(e$8&q2u'
 
-ALLOWED_HOSTS = ["apple.itsmekiran.com", "https://apple.itsmekiran.com/"]
+ALLOWED_HOSTS = ["apple.itsmekiran.com", "https://apple.itsmekiran.com/", "*"]
 
 
 # Change this later
