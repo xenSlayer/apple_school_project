@@ -45,3 +45,11 @@ toml==0.10.2
 xlrd==2.0.1
 xlwt==1.3.0
 ```
+<br>
+<hr>
+<br>
+# exporting setting files for dev
+
+```
+set DJANGO_SETTINGS_MODULE=apple_school_project.settings.development
+```
