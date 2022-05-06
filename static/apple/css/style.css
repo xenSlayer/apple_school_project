@@ -1,4 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/13.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 /*------------Image Slider------------*/
+
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -152,6 +167,9 @@ h3{
     .row{
         flex-direction: column;
     }
+    .msg{
+        width: 100%;
+    }
 }
 
 .msg{
@@ -187,6 +205,7 @@ h3{
 }
 .facilities-col p{
     padding: 0;
+    color: black;
 }
 .facilities-col h3{
     margin-top: 16px;
@@ -272,7 +291,8 @@ h3{
 
 @media(max-width: 700px){
     .contactpart h1{
-        font-size: 24px;
+        padding: 5px;
+        font-size: 20px;
     }
 }
 
@@ -373,7 +393,13 @@ h3{
     font-size: 16px;
     font-weight: normal;
   }
-  
+  .event .event-left .year{
+    margin-top: 8px;
+    padding: 5px 5px 5px; 
+    background-color: white;
+    border: 3px solid limegreen;
+    color: black;
+  }
   .event .event-right {
     display: flex;
     flex-direction: column;
@@ -384,6 +410,7 @@ h3{
   .event .event-right h3.event-title {
     font-size: 24px;
     margin: 24px 0 10px 0;
+    text-align: left;
     color: #218bbb;
     text-transform: uppercase;
   }
@@ -423,6 +450,9 @@ h3{
   
     .event .event-left .event-date {
       padding: 10px 0;
+    }
+    .event-container {
+        padding: 20px;
     }
   }
 
@@ -518,6 +548,10 @@ h3{
         border-radius: 4px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         position: relative;
+    }
+    .contact-us{
+        width: 90%;
+        margin-top: -100px;
     }
 }
 
@@ -637,6 +671,12 @@ h4{
 
 .login-page{
     padding: 50px 0;
+}
+
+@media(max-width: 700px){
+    .login-page{
+        padding: 0;
+    }
 }
 .form-container{
     background: black;
