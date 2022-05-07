@@ -13,7 +13,7 @@ DATABASES = {
         'NAME': 'kiranpau_apple',
         'USER': 'kiranpau_kiran',
         'PASSWORD': f'cskWeHB7V8$yAq8GFUFQJQDx!NTrM3wme3#bX7!8sBCp5qYGcbHqzGAZC%e',
-        'HOST': 'https://apple.itsmekiran.com/',
+        'HOST': 'apple.itsmekiran.com',
         'PORT': '3306',
     }
 }
