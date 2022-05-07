@@ -38,11 +38,11 @@
                 </li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
                 <li><a href="{% url 'downloads' %}">Downloads</a></li>
-                {% if user.is_authenticated %}                
-                {% else %}
+                <!-- {% if user.is_authenticated %}                 -->
+                <!-- {% else %} -->
                 <li><a href="{% url 'login' %}">Login/Register<img src="{% static 'apple/img/user1.png' %}"
                     style="width: 20px; position: absolute; margin-left: 5px;"></a></li>
-                {% endif %}
+                <!-- {% endif %} -->
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>

@@ -6,14 +6,11 @@ ALLOWED_HOSTS = ["apple.itsmekiran.com", "https://apple.itsmekiran.com/", "*"]
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'sql_mode': 'traditional',
-        },
+        'ENGINE': 'django.db.backends.mysql',        
         'NAME': 'kiranpau_apple',
         'USER': 'kiranpau_kiran',
         'PASSWORD': 'cskWeHB7V8$yAq8GFUFQJQDx!NTrM3wme3#bX7!8sBCp5qYGcbHqzGAZC',
-        'HOST': 'www.itsmekiran.com',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }

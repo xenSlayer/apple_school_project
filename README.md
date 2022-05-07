@@ -44,12 +44,48 @@ tablib==3.2.1
 toml==0.10.2
 xlrd==2.0.1
 xlwt==1.3.0
+django-createsuperuserwithpassword==2.0.0
 ```
 <br>
 <hr>
 <br>
-# exporting setting files for dev
+
+## settings environment file 
+<br>
+
+### <b>DEVELOPMENT:
+
+<br>
 
 ```
 set DJANGO_SETTINGS_MODULE=apple_school_project.settings.development
+```
+<br>
+
+### <b>PRODUCTION:
+
+<br>
+
+```
+set DJANGO_SETTINGS_MODULE=apple_school_project.settings_
+```
+
+<br>
+<hr>
+<br>
+
+## accessing database from remote using terminal
+<br>
+
+```
+mysql --host=www.itsmekiran.com --user=kiranpau_kiran --password
+```
+
+<br>
+
+## create super user
+<br>
+
+```
+manage.py createsuperuserwithpassword  --username kiran --password kiran --email kiranpaudel1892@gmail.com --preserve
 ```
