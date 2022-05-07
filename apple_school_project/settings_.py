@@ -10,7 +10,7 @@ DATABASES = {
         'NAME': 'kiranpau_apple',
         'USER': 'kiranpau_kiran',
         'PASSWORD': 'cskWeHB7V8$yAq8GFUFQJQDx!NTrM3wme3#bX7!8sBCp5qYGcbHqzGAZC',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
