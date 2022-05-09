@@ -4,6 +4,22 @@ SECRET_KEY = '4n=@9*u$vk5icclq*j!r$cl+r77ct$&+=nrb&g#t6%(e$8&q2u'
 
 ALLOWED_HOSTS = ["apple.itsmekiran.com", "https://apple.itsmekiran.com/", "*"]
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        },
+        'NAME': 'kiranpau_apple',
+        'USER': 'kiranpau_kiran',
+        'PASSWORD': 'cskWeHB7V8$yAq8GFUFQJQDx!NTrM3wme3#bX7!8sBCp5qYGcbHqzGAZC',
+        'HOST': '172.104.56.107',
+        'PORT': '3306',
+    }
+}
+
+# createsuper user
+INSTALLED_APPS += ("django_createsuperuserwithpassword", )
 
 # Change this later
 cpanel_user = 'kiranpau'
