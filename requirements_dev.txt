@@ -16,7 +16,7 @@ MarkupPy==1.14
 mysqlclient==2.1.0
 odfpy==1.4.1
 openpyxl==3.0.9
-Pillow==9.1.0
+Pillow==9.1.1
 pycodestyle==2.8.0
 PyJWT==2.4.0
 pytz==2022.1
